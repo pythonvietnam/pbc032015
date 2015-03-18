@@ -1,0 +1,67 @@
+in port-channel 1
+ sw mo trunk
+in range fa 0/1 - 3
+channel-group 1 mode on
+
+in port-channel 3
+ sw mo trunk
+in range fa 0/4 - 6
+channel-group 3 mode on
+
+in port-channel 4
+ sw mo trunk
+in range fa 0/7 - 8
+channel-group 4 mode on
+
+in port-channel 2 
+ sw mo trunk
+in range fa 0/4 - 6
+channel-group 2 mode on
+
+in port-channel 5
+ sw mo trunk
+in range fa 0/7 - 8
+channel-group 5 mode on
+
+no vtp mo client
+no vtp domain technet.com.vn
+no vtp pass ccna
+no vtp ver 2
+
+in range fa 0/18 -19
+channel-group 1 mo ac
+exit
+in port-channel 1
+sw mo trunk
+
+in range fa 0/21 -22
+channel-group 2 mo ac
+exit
+in port-channel 2
+sw mo trunk
+
+in range fa 0/23 -24
+channel-group 3 mo ac
+exit
+in port-channel 3
+sw mo trunk
+
+enable pass cisco
+line vty 0 15
+pass CCNA
+login
+line console 0
+pass CCNA
+login
+
+ip access-list standard TELNET 
+permit 192.168.2.0 0.0.0.255
+deny any
+exit
+line vty 0 15
+ip access-class TELNET in
+
+username GATEWAY pass ccna
+in s0/0
+encapsulation ppp
+ppp authentication chap 
