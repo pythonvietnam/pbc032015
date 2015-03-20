@@ -14,6 +14,14 @@
 				"buffer_size": 10,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "/home/manhhung/Desktop/dashboard/adayroi_log.sql",
+			"settings":
+			{
+				"buffer_size": 249330939,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -77,7 +85,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -103,6 +111,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/manhhung/Desktop/dashboard/adayroi_log.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 249330939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
