@@ -6,33 +6,33 @@ print "3.Nhan(*)"
 print "4.Chia(/)"
 print "5.Fibonacci(f)"
 print "6.Quit(q)"
-answer = raw_input('Chon 1 trong cac phep tinh: ')
-while answer not in ['1','2','3','4','5','6','Cong','Tru','Nhan','Chia','Fibonacci','Quit','+','-','*','/','f','q']:
+answer = raw_input('Chon (1-6): ')
+while answer not in ['1','2','3','4','5','6','+','-','*','/','f','q']:
     print "1.Cong(+)"
     print "2.Tru(-)"
     print "3.Nhan(*)"
     print "4.Chia(/)"
     print "5.Fibonacci(f)"
     print "6.Quit(q)"
-    answer = raw_input('Chon 1 trong cac phep tinh: ')
+    answer = raw_input('Chon (1-6): ')
 else:
-    if answer == "Cong" or answer == "+" or answer == "1":
+    if answer == "+" or answer == "1":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a+b
-    elif answer == "Tru" or answer == "-" or answer == "2":
+    elif answer == "-" or answer == "2":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a-b
-    elif answer == "Nhan" or answer == "*" or answer == "3":
+    elif answer == "*" or answer == "3":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a*b
-    elif answer == "Chia" or answer == "/" or answer == "4":
+    elif answer == "/" or answer == "4":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a/b
-    elif answer == "Fibonacci" or answer == "f" or answer == "5":
+    elif answer == "f" or answer == "5":
 	     n = int(raw_input('Tinh F(n), hay nhap n: '))
 	     a=0
 	     b=1
@@ -48,7 +48,7 @@ else:
 		     i=i+1
 		       
        print 'F('+str(n)+')= ', r
-    elif answer == "Quit" or answer == "q" or answer == "6":
+    elif answer == "q" or answer == "6":
        print 'Tam biet!'
 	
 
