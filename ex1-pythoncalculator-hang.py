@@ -46,10 +46,9 @@ else:
 		     a=b
 		     b=r
 		     i=i+1
-		       
-       print 'F('+str(n)+')= ', r
+	     print 'F('+str(n)+')= ', r
     elif answer == "q" or answer == "6":
-       print 'Tam biet!'
+    	     print 'Tam biet!'
 	
 
 
