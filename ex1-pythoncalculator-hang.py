@@ -20,19 +20,19 @@ else:
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a+b
-     elif answer == "Tru" or answer == "-" or answer == "2":
+    elif answer == "Tru" or answer == "-" or answer == "2":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a-b
-     elif answer == "Nhan" or answer == "*" or answer == "3":
+    elif answer == "Nhan" or answer == "*" or answer == "3":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a*b
-     elif answer == "Chia" or answer == "/" or answer == "4":
+    elif answer == "Chia" or answer == "/" or answer == "4":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a/b
-     elif answer == "Fibonacci" or answer == "f" or answer == "5":
+    elif answer == "Fibonacci" or answer == "f" or answer == "5":
 	     n = int(raw_input('Tinh F(n), hay nhap n: '))
 	     a=0
 	     b=1
@@ -47,8 +47,8 @@ else:
 		       b=r
 		       i=i+1
 		       
-     print 'F('+str(n)+')= ', r
-     elif answer == "Quit" or answer == "q" or answer == "6":
+       print 'F('+str(n)+')= ', r
+    elif answer == "Quit" or answer == "q" or answer == "6":
        print 'Tam biet!'
 	
 
