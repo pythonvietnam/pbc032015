@@ -42,10 +42,10 @@ else:
 		     r=1
 	     else:
 	       while i<=n-2:
-		       r=a+b
-		       a=b
-		       b=r
-		       i=i+1
+		     r=a+b
+		     a=b
+		     b=r
+		     i=i+1
 		       
        print 'F('+str(n)+')= ', r
     elif answer == "Quit" or answer == "q" or answer == "6":
