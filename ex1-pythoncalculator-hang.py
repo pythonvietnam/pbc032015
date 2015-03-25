@@ -26,6 +26,8 @@ while running:
     elif answer == "/" or answer == "4":
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
+	     while b == 0:
+         b = float(raw_input('So thu 2 phai khac 0, hay nhap lai: '))
 	     print 'Ket qua: ', a/b
     elif answer == "f" or answer == "5":
 	     n = int(raw_input('Tinh F(n), hay nhap n: '))
