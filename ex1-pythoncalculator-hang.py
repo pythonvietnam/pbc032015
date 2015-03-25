@@ -2,7 +2,7 @@
 print "Xin chao, day la chuong trinh Python Calculator"
 running = True 
 while running:
-    print "---------------------------"
+    print "----------------------------"
     print "1.Cong(+)"
     print "2.Tru(-)"
     print "3.Nhan(*)"
