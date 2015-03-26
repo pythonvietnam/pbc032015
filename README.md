@@ -3,8 +3,10 @@ Python Beginner Class Repository 03-2015.
 
 Repository dùng cho lớp  Python cơ bản tháng 03 năm 2015.
 
-- Học viên commit bài tập đã làm, pull request và fork repo
-- Giảng viên commit tài liệu dùng chung cho học viên
+- Học viên commit bài tập đã làm, pull request và fork repo.
+- Mỗi học viên tự tạo một thư mục với tên là tên của mình, không dấu, tiêng Việt và nộp bài tập vào thư mục đó.
+- Giảng viên commit tài liệu dùng chung cho học viên.
+- Lưu ý khi pull request, push hãy chọn chính xác branch
 
 #### Hãy tuân thủ nội quy và cùng giúp đỡ nhau để học hiệu quả nhất.
 
