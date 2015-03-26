@@ -12,24 +12,37 @@ while running:
     answer = raw_input('Chon (1-6): ')
 
     if answer == "+" or answer == "1":
+	 try: 
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a+b
+	 except:
+	     print 'Nhap sai!Hay thu lai.'
     elif answer == "-" or answer == "2":
+	 try:  
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a-b
+	 except:
+	     print 'Nhap sai!Hay thu lai.'
     elif answer == "*" or answer == "3":
+	 try: 
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     print 'Ket qua: ', a*b
+	 except:
+	     print 'Nhap sai!Hay thu lai.'
     elif answer == "/" or answer == "4":
+	 try:
 	     a = float(raw_input('Nhap so thu 1: '))
 	     b = float(raw_input('Nhap so thu 2: '))
 	     while b == 0:
          	     b = float(raw_input('So thu 2 phai khac 0, hay nhap lai: '))
 	     print 'Ket qua: ', a/b
+	 except:
+	     print 'Nhap sai!Hay thu lai.'
     elif answer == "f" or answer == "5":
+	 try:
 	     n = int(raw_input('Tinh F(n), hay nhap n: '))
 	     a=0
 	     b=1
@@ -45,6 +58,8 @@ while running:
 		     i=i+1
 		     
 	     print 'F('+str(n)+')= ', r
+	 except:
+	     print 'Nhap sai!Hay thu lai.'
     elif answer == "q" or answer == "6":
  	     running = False   
  	     print 'Quit!'
