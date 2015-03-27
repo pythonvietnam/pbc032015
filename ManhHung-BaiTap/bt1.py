@@ -10,26 +10,28 @@ else:
 	print "Xin chao,",name,"day la chuong trinh tinh lam phep tinh voi 2 so"
 	print name,'muon lam phep tinh gi? cong, tru, nhan, chia: '
 pt = raw_input()
+try:
+	if (pt == 'fi' and name == 'Thay giao'):
+		print 'doi',name,'day tiep'
+	else:	
+		print 'moi',name,'nhap so thu nhat: '
+		x = input()
+		print 'moi',name,'nhap so thu hai: '
+		y = input()
 
-if (pt == 'fi' and name == 'Thay giao'):
-	print 'doi',name,'day tiep'
-else:	
-	print 'moi',name,'nhap so thu nhat: '
-	x = float(input())
-	print 'moi',name,'nhap so thu hai: '
-	y = float(input())
-
-	if pt == 'cong':
-		kq = x + y
-		print 'ket qua phep tinh', x, '+', y, '=', kq 
-	if pt == 'tru':
-		kq = x - y
-		print 'ket qua phep tinh', x, '-', y, '=', kq
-	if pt == 'nhan':
-		kq = x * y
-		print 'ket qua phep tinh', x, '*', y, '=', kq
-	if pt == 'chia':
-		kq = x / y
-		print 'ket qua phep tinh', x, '/', y, '=', kq
-	else:
-		print 'chua hoc phep tinh',pt,'chiu ko biet ket qua'
+		if pt == 'cong':
+			kq = x + y
+			print 'ket qua phep tinh', x, '+', y, '=', kq 
+		if pt == 'tru':
+			kq = x - y
+			print 'ket qua phep tinh', x, '-', y, '=', kq
+		if pt == 'nhan':
+			kq = x * y
+			print 'ket qua phep tinh', x, '*', y, '=', kq
+		if pt == 'chia':
+			kq = x / y
+			print 'ket qua phep tinh', x, '/', y, '=', kq
+		else:
+			print 'chua hoc phep tinh',pt,'chiu ko biet ket qua'
+except:
+	print 'ban phai nhap so'
