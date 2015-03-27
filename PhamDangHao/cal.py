@@ -6,7 +6,7 @@ Nhap 2 de thuc hien phep tru
 Nhap 3 de thuc hien phep nhan 
 Nhap 4 de thuc hien phep chia'''
 print '----------------------------------------------------------' 
-while True:
+while 1:
 	a=(raw_input('Vui long chon phep toan ban muon thuc hien - Nhan Q de thoat'))
 	if a =='q':
 		print 'Ban vua nhap phim Q! Chuong trinh se thoat'
