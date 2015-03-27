@@ -13,27 +13,27 @@ print '''Cac Sticker he thong ho tro:
 \t6: T_T 
 \tq: quit'''
 
-input = raw_input("Nhap vao sticker mong muon:")
+xxx = raw_input("Nhap vao sticker mong muon: ")
 
-while input != 'q':
-    if input == '1':
+while xxx != 'q':
+    if xxx == '1':
         print ":)"
         break
-    elif input == '2':
+    elif xxx == '2':
         print ":x"
         break
-    elif input == '3':
+    elif xxx == '3':
         print ":D"
         break
-    elif input == '4':
+    elif xxx == '4':
         print "=)"
         break
-    elif input == '5':
+    elif xxx == '5':
         print ":P"
         break
-    elif input == '6':
+    elif xxx == '6':
         print "T_T"
         break
     else:
-        input=raw_input("Ban da nhap sai, nhap lai sticker: ")
+        xxx=raw_input("Ban da nhap sai, nhap lai sticker: ")
     
