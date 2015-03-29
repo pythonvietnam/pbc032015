@@ -6,7 +6,8 @@ for i in range(1,11):
         d[a] = d[a]+1
     else:
         d[a] = 1
-print 'Ki tu '+str(a)+' da xuat hien '+d[a]+' lan.'
-#print d
-#for key in d:
-#    print 'Ki tu '+key+' da xuat hien '+d[key]+' lan.'
+#In d
+print d
+#In ra toan bo phan tu cua d.
+for key in d:
+  print 'Ki tu '+str(key)+' da xuat hien '+str(d[key])+' lan.'
