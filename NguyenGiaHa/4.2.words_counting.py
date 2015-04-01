@@ -37,7 +37,7 @@ try:
 			print 'Doan van ban vua nhap co '+str(j)+' ki tu.'
 			print d
 			for c in d:
-				print " '"+str(c)+" xuat hien "+str(d[c]) +" lan."
+				print " '"+str(c)+"' xuat hien "+str(d[c]) +" lan."
 		elif answer=='3':
 			running=False
 			print 'Quit!'
