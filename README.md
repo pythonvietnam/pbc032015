@@ -14,6 +14,10 @@ Repository dùng cho lớp  Python cơ bản tháng 03 năm 2015.
 Group FB: [fb.com/groups/pythonvn]
 
 [fb.com/groups/pythonvn]: https://www.facebook.com/groups/pythonvn/?ref=bookmarks
+
+Forum Python : 
+
+[Python Việt Nam]: http://pythonvietnam.info
 =======
 Python Beginner Class Repository 03-2015
 
