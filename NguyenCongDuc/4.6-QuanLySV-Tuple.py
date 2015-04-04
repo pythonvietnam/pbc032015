@@ -1,14 +1,16 @@
 #!/usr/bin/python
 # PCB032015
-# Chuong trinh quan ly sinh vien
+# Chuong trinh quan ly sinh vien su dung list va tuple
+# List chua danh sach sinh vien, moi tuple trong list la mot sinh vien
 # ducnc92@hotmail.com
 
 hello = '''\nChuong tring quan ly sinh vien!
 Moi ban lua chon chuc nang:
 \t1. Them sinh vien
 \t2. Xoa sinh vien
-\t3. Liet ke danh sach sinh vien
-\t4. Thoat'''
+\t3. Sua sinh vien 
+\t4. Liet ke danh sach sinh vien
+\t5. Thoat'''
 
 list_sv = []
 
@@ -17,7 +19,7 @@ while True:
     print hello
     chucnang = raw_input("  > Ban lua chon: ")
     
-    if chucnang == '4' or chucnang == 'q':
+    if chucnang == '5' or chucnang == 'q':
         print "Bye!"
         break
     
@@ -67,6 +69,23 @@ while True:
             
             
     elif chucnang == '3':
+        print ("\nChuc sua sinh vien")
+        ma_sv = raw_input("  > Nhap ma sinh vien can sua: ")
+        flag = False
+        for i in range(len(list_sv)):
+            if ma_sv == list_sv[i][0]:
+                del(list_sv[i])
+                ma_sv = raw_input("Nhap vao ma so sinh vien: ")
+                ten_sv = raw_input("Nhap vao ten: ")
+                diem_sv = float(raw_input("Nhap vao diem: "))
+                list_sv.append((ma_sv, ten_sv, diem_sv))
+                flag = True
+                break
+        if flag == False:
+            print "\n  => Khong ton tai sinh vien de xoa!"
+            
+            
+    elif chucnang == '4':
         print '''\n Chuc nang liet ke sinh vien
                  An 1 de sap xep theo MaSV
                  An 2 de sap xep theo Ten
