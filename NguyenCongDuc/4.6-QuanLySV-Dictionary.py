@@ -80,17 +80,18 @@ while True:
                         ten = raw_input("  > Nhap ten moi: ")
                         list_sv[i]['ten'] = ten
                         print "\n => Da sua ten!"
+                        flag = True
                     elif sua == '2':
                         diem = raw_input("  > Nhap diem moi: ")
                         list_sv[i]['diem'] = diem
                         print "\n => Da sua diem!"
+                        flag = True
                     elif sua == 'q':
                         break
                 print "\n => Da sua xong!"        
                 break
         if flag == False:
             print "\n  => Khong ton tai sinh vien de sua!"
-        print list_sv    
             
     elif chucnang == '4':
         print '''\n Chuc nang liet ke sinh vien
