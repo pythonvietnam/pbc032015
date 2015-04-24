@@ -17,6 +17,7 @@ def extract(line, i):
         print "Mat khau dung la: ", line, "tai dong so ",i
         exit()
     except Exception, e:
+#        print e
         print "Dong so: ",i, "khong phai la mat khau!"
 
         
@@ -26,7 +27,7 @@ if __name__ == '__main__':
         print '''Chuong trinh yeu cau 3 tham so.
 Su dung cu phap 'python 9.2-zipfile.py file_zip file_tu_dien' de tien hanh giai ma'''
         exit()
-
+   
     script, target, dict = argv
     
     try:
