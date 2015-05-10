@@ -9,7 +9,7 @@ def print_info(x):
 
 if __name__ == '__main__':
     if len(argv) != 2:
-        print 'Hay nhap theo dinh dang "python 10callconfig.py path_to_configfile"'
+        print 'Hay nhap theo dinh dang "python main.py path_to_configfile"'
         exit()
     script, file = argv
     duc = class_config(file)
