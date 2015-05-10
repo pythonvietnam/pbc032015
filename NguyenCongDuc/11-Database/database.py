@@ -28,14 +28,14 @@ try:
     print "Noi dung rows: ", rows
 
 #Insert du lieu
-    sql2 = "INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY) VALUES (4, 'DucNC', 23, 'Hanoi', 6500.00)"
-#    data2insert = (4, 'DucNC', 23, 'Hanoi', 6500.00)
+    sql2 = "INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY) VALUES (%s, %s, %s, %s, %s)"
+    data2insert = (10, 'DucNC', 23, 'HCM', 6500.00)
     try:
-        cur.execute(sql2)
+        cur.execute(sql2, data2insert)
         con.commit()
     except Exception, e:
         con.rollback()
-        print e
+        print "Co loi insert", e
     
 #Update 
     sql3 = "update CUSTOMERS set NAME = 'NDMD' WHERE ID = 1"
